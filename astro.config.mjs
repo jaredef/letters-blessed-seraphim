@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://letters.blessedseraphim.com',
 	integrations: [
 		starlight({
 			title: 'Letters from Blessed Seraphim',
@@ -471,8 +472,8 @@ export default defineConfig({
 				},
 			],
 		}),
-		// astroOgImagesGenerator(),
 		sitemap(),
+		// astroOgImagesGenerator(),
 	],
 	output: 'static',
 });

@@ -9,6 +9,22 @@ export default defineConfig({
 		starlight({
 			title: 'Letters from Blessed Seraphim',
 			customCss: ['/src/fonts/font-face.css', '/src/styles/custom.css'],
+			head: [
+				{
+				  tag: 'meta',
+				  attrs: {
+					property: 'og:image',
+					content: 'https://letters.blessedseraphim.com/og/index.png',
+				  },
+				},
+				{
+				  tag: 'meta',
+				  attrs: {
+					property: 'twitter:image',
+					content: 'https://letters.blessedseraphim.com/og/index.png',
+				  },
+				},
+				  ],
 			components: {
 				Aside: ['src/components/holyWrit.astro'],
 			},
@@ -455,7 +471,7 @@ export default defineConfig({
 				},
 			],
 		}),
-		astroOgImagesGenerator(),
+		// astroOgImagesGenerator(),
 		sitemap(),
 	],
 	output: 'static',

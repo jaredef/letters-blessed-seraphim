@@ -1,0 +1,149 @@
+/* Dark mode colors */
+:root {
+	--sl-color-accent-low: #131e4f;
+	--sl-color-accent: #5874db;
+	--sl-color-accent-high: #b3c7ff;
+	--sl-color-text-accent: #234ad5;
+	--sl-color-text-invert: #ffffff;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #eceef2;
+	--sl-color-gray-2: #c0c2c7;
+	--sl-color-gray-3: #888b96;
+	--sl-color-gray-4: #545861;
+	--sl-color-gray-5: #353841;
+	--sl-color-gray-6: #24272f;
+	--sl-color-black: #17181c;
+	--sl-color-writ: #6b1414;
+	--sl-color-question: #ffeb54;
+  }
+  
+  /* Light mode colors */
+  :root[data-theme='light'] {
+	--sl-color-accent-low: #c7d6ff;
+	--sl-color-accent: #5874db;
+	--sl-color-accent-high: #182775;
+	--sl-color-white: #17181c;
+	--sl-color-gray-1: #24272f;
+	--sl-color-gray-2: #353841;
+	--sl-color-gray-3: #545861;
+	--sl-color-gray-4: #888b96;
+	--sl-color-gray-5: #c0c2c7;
+	--sl-color-gray-6: #eceef2;
+	--sl-color-gray-7: #f5f6f8;
+	--sl-color-black: #ffffff;
+	--sl-color-writ: #a41f1f;
+  }
+  
+  /* Update your blockquote styles to use these variables */
+  .sl-markdown-content blockquote:not(:where(.not-content *)) {
+	margin-left: 1.8rem;
+	padding: 1rem;
+	border-inline-start: 1px solid var(--sl-color-accent);
+	background-color: var(--sl-color-gray-6);
+  }
+  
+  /* Light mode override for blockquotes */
+  :root[data-theme='light'] .sl-markdown-content blockquote:not(:where(.not-content *)) {
+	background-color: var(--sl-color-gray-1);
+  }
+
+:root {
+	font-family: 'Sina Nova', serif;
+}
+
+p, .tagline {
+	font-size: 1.4rem;
+	font-family: 'Sina Nova', sans-serif;
+}
+
+h1 {
+	font-family: 'Sina Nova Bold', serif;
+	font-weight: 700;
+	font-size: 3.4rem;
+}
+
+h2 {
+	font-size: 1.4rem !important;
+	line-height: 2.4rem !important;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'French News', sans-serif;
+}
+
+ol li {
+	font-family: 'Sina Nova', serif;
+	font-size: 1.4rem;
+}
+
+starlight-toc ul li a {
+	font-family: 'Sina Nova', serif;
+	font-size: 1rem !important;
+}
+
+starlight-toc h2 {
+	font-family: 'Sina Nova Bold', serif;
+	font-size: 1.4rem !important;
+}
+
+.site-title {
+	font-family: 'Sina Nova Bold', serif;
+	font-size: 1rem;
+	color: var(--sl-color-gray-1);
+}
+
+.sl-link-card span a {
+	font-family: 'Sina Nova', serif;
+}
+
+blockquote p {
+	font-family: 'Sina Nova Bold Italic', serif;
+	font-size: 1.4rem;
+}
+
+.sl-markdown-content blockquote:not(:where(.not-content *)) {
+	margin-left: 1.8rem;
+	padding: 1rem;
+	border-inline-start: 1px solid var(--sl-color-accent);
+
+}
+
+:root[data-theme='light'] .sl-markdown-content blockquote:not(:where(.not-content *)) {
+background-color: var(--sl-color-gray-6);
+border-inline-start: 1px solid var(--sl-color-accent);
+}
+
+starlight-theme-select label{
+--sl-select-width: 19rem !important;
+}
+
+.diarize {
+	font-weight: lighter;
+	font-family: 'Segoe UI', Roboto, sans-serif;
+	font-size: 1.0rem;
+	letter-spacing: 0.1rem;
+	margin-right: 0.5rem;
+}
+
+sup a {
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	color: var(--sl-color-gray-4) !important;
+	margin-left: 0.2rem;
+	background-color: rgba(254, 247, 216, 0.75);
+	border-radius: 50%;
+	padding: 0 0.4rem;
+	text-decoration: none;
+}
+
+[data-footnote-backref] {
+	color: cornsilk !important;
+}
+
+.audio-description {
+	font-size: 0.8rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.audio-description a {
+	color: var(--sl-color-gray-3);
+}

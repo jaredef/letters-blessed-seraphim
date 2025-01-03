@@ -1,0 +1,55 @@
+---
+import { Icon } from '@astrojs/starlight/components';
+
+// Define the props interface
+interface Props {
+  type?: 'question';
+  title?: string;
+}
+
+const { type = 'note', title } = Astro.props;
+---
+
+<aside class:list={['custom-aside', type]}>
+  <div class="header">
+    
+    {title && <p class="title"><Icon name="comment" class="icon" />{title}</p>}
+  </div>
+  <slot />
+</aside>
+
+<style>
+  .custom-aside {
+    padding: 2rem;
+    border-radius: 0.25rem;
+    border-top: 2px solid var(--sl-color-question) !important;
+    background-color: var(--sl-color-gray-6);
+    margin-top: 2rem !important;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--sl-color-question);
+    display: inline !important;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+  }
+  
+  .question {
+    border-color: var(--sl-color-gray-5);
+  }
+</style>

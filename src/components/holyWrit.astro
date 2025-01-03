@@ -1,0 +1,51 @@
+---
+// Define the props interface
+interface Props {
+  type?: 'scripture';
+  title?: string;
+}
+
+const { type = 'note', title } = Astro.props;
+---
+
+<aside class:list={['custom-aside', type]}>
+  {title && <p class="title">{title}</p>}
+  <slot />
+</aside>
+
+<style>
+  .custom-aside {
+    padding: 2rem;
+    border-radius: 0.25rem;
+    border-top: 4px solid var(--sl-color-writ) !important;
+    border-bottom: 4px solid var(--sl-color-writ) !important;
+    background-color: var(--sl-color-gray-6);
+    margin-top: 2rem !important;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  /* Style variants */
+  .note {
+    border-color: var(--sl-color-blue);
+  }
+
+  .tip {
+    border-color: var(--sl-color-green);
+  }
+
+  .caution {
+    border-color: var(--sl-color-orange);
+  }
+
+  .danger {
+    border-color: var(--sl-color-red);
+  }
+
+  .scripture {
+    border-color: var(--sl-color-gray-5);
+  }
+</style>

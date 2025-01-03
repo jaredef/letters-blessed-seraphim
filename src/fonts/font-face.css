@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Sina Nova';
+    src: url('./SinaNovaW01Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: 'French News';
+    src: url('./1906FrenchNewsW00Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sina Nova Bold';
+    src: url('./SinaNovaW01Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sina Nova Bold Italic';
+    src: url('./SinaNovaW01Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}

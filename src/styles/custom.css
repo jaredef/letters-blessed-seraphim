@@ -48,16 +48,16 @@
   }
 
 :root {
-	font-family: 'Sina Nova', serif;
+	font-family: 'Sina Nova', Georgia, serif;
 }
 
 p, .tagline {
 	font-size: 1.4rem;
-	font-family: 'Sina Nova', sans-serif;
+	font-family: 'Sina Nova', Georgia, serif;
 }
 
 h1 {
-	font-family: 'Sina Nova Bold', serif;
+	font-family: 'Sina Nova Bold', Georgia, serif;
 	font-weight: 700;
 	font-size: 3.4rem;
 }
@@ -68,36 +68,36 @@ h2 {
 }
 
 h2, h3, h4, h5, h6 {
-	font-family: 'French News', sans-serif;
+	font-family: 'French News', Georgia, serif;
 }
 
 ol li {
-	font-family: 'Sina Nova', serif;
+	font-family: 'Sina Nova', Georgia, serif;
 	font-size: 1.4rem;
 }
 
 starlight-toc ul li a {
-	font-family: 'Sina Nova', serif;
+	font-family: 'Sina Nova', Georgia, serif;
 	font-size: 1rem !important;
 }
 
 starlight-toc h2 {
-	font-family: 'Sina Nova Bold', serif;
+	font-family: 'Sina Nova Bold', Georgia, serif;
 	font-size: 1.4rem !important;
 }
 
 .site-title {
-	font-family: 'Sina Nova Bold', serif;
+	font-family: 'Sina Nova Bold', Georgia, serif;
 	font-size: 1rem;
 	color: var(--sl-color-gray-1);
 }
 
 .sl-link-card span a {
-	font-family: 'Sina Nova', serif;
+	font-family: 'Sina Nova', Georgia, serif;
 }
 
 blockquote p {
-	font-family: 'Sina Nova Bold Italic', serif;
+	font-family: 'Sina Nova Bold Italic', Georgia, serif;
 	font-size: 1.4rem;
 }
 

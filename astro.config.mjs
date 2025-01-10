@@ -11,6 +11,7 @@ export default defineConfig({
 			title: {
 				en: 'Letters from Blessed Seraphim',
 				ru: 'Письма от Блаженного Серафима',
+				el: 'Επιστολές από τον Μακαριστό Σεραφείμ',
 			},
 			customCss: ['/src/fonts/font-face.css', '/src/styles/custom.css'],
 			head: [
@@ -41,7 +42,11 @@ export default defineConfig({
 				'ru': {
 					label: 'Русский',
 					lang: 'ru',
-				} 
+				},
+				'el': {
+					label: 'Ελληνικά',
+					lang: 'el',
+				},
 			},
 			// social: {
 			// 	github: 'https://github.com/withastro/starlight',

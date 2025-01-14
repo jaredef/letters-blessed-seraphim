@@ -52,6 +52,10 @@ export default defineConfig({
 					label: 'Español',
 					lang: 'es',
 				},
+				'ro': {
+					label: 'Română',
+					lang: 'ro',
+				}
 			},
 			// social: {
 			// 	github: 'https://github.com/withastro/starlight',

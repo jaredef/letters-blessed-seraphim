@@ -1,0 +1,112 @@
+---
+const languages = [
+  {
+    code: 'en',
+    name: 'English',
+    flag: '🇺🇸'
+  },
+  {
+    code: 'ru',
+    name: 'Русский',
+    flag: '🇷🇺'
+  },
+  {
+    code: 'el',
+    name: 'Ελληνικά',
+    flag: '🇬🇷'
+  },
+  {
+    code: 'es',
+    name: 'Español', 
+    flag: '🇪🇸'
+  },
+  {
+    code: 'ro',
+    name: 'Română',
+    flag: '🇷🇴'
+  }
+];
+
+const currentPath = Astro.url.pathname;
+const currentLang = currentPath.split('/')[1] || 'en';
+---
+
+<div class="lang-selector">
+  <div class="lang-wrapper">
+    {languages.map(lang => (
+      <a 
+        href={lang.code === 'en' ? '/' : `/${lang.code}`}
+        class={`lang-link ${currentLang === lang.code ? 'active' : ''}`}
+      >
+        <span class="lang-flag">{lang.flag}</span>
+        <span class="lang-name">{lang.name}</span>
+      </a>
+    ))}
+  </div>
+</div>
+
+<style>
+  .lang-selector {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .lang-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    background: var(--sl-color-gray-7);
+    padding: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+
+  .lang-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--sl-color-gray-2);
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    font-size: 0.9rem;
+  }
+
+  .lang-link:hover {
+    background: var(--sl-color-gray-6);
+    transform: translateY(-1px);
+    border-color: var(--sl-color-gray-5);
+  }
+
+  .lang-link.active {
+    background: var(--sl-color-gray-5);
+    border-color: var(--sl-color-gray-4);
+    color: var(--sl-color-white);
+  }
+
+  .lang-flag {
+    font-size: 1.2em;
+    filter: saturate(1.2);
+  }
+
+  .lang-name {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  @media (max-width: 600px) {
+    .lang-wrapper {
+      padding: 0.5rem;
+    }
+    
+    .lang-link {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+    }
+  }
+</style>

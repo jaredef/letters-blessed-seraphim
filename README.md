@@ -1,45 +1,51 @@
-# Starlight Starter Kit: Basics
+# Letters from Blessed Seraphim
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-npm create astro@latest -- --template starlight
-```
+A comprehensive collection of known letters written by Blessed Seraphim of Platina to contemporary correspondents. This digital collection represents Blessed Seraphim's spiritual legacy and includes:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+- 328 letters originally published [online](https://proza.ru/2016/10/04/1512) in October 2016
+- Additional letters interpolated from Fr. Alexey Young's corpus of excerpts published in *Letters from Fr. Seraphim*
+- Added footnotes for additional context
+- Additional letters added as made available widely
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🌍 Available Languages
 
-## 🚀 Project Structure
+- English
+- Russian (Русский)
+- Greek (Ελληνικά)
+- Spanish (Español)
+- Romanian (Română)
+- more to be added!
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## 🚀 Features
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+- Full multilingual support
+- SEO optimization with OG image generation
+- Custom styling and fonts
+- Responsive design
+- Intuitive navigation by year and theme
+- Complete chronological indexing (1961-1982)
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## 📚 Core Content
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+The letters cover a wide range of topics, including:
+- Conversion to Orthodoxy
+- Establishment of the Orthodox bookstore
+- Publication of "The Orthodox Word"
+- Monastic life at Platina
+- Theological discussions on evolution
+- Church and jurisdictional relations
+- Spiritual advice for converts
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## 🛠️ Tech Stack
+
+- [Astro](https://astro.build)
+- [Starlight](https://starlight.astro.build)
+- [OG Images Generator](https://github.com/MichaelBarney/og-images-generator)
+- [Vercel](https://vercel.com) for deployment
 
 ## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -47,9 +53,15 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🌐 Deployment
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+The site is configured for deployment on Vercel with automatic OG image generation and sitemap creation. The production site can be accessed at: https://letters.blessedseraphim.com
+
+## 📝 License
+
+This project is an open source project which includes letters from Fr. Seraphim Rose published and collected from various sources.
+
+## 👥 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request—especially to correct and perfect translations.
